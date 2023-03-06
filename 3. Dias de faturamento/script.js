@@ -131,9 +131,11 @@ fat.forEach(e => {
     qtdDias++;
   }
 });
-let media = soma / qtdDias;
 
+let media = soma / qtdDias;
 let melhorDia = { dia: 0, valor: 0 };
+
+// Aqui foi utilizado o primeiro valor do array
 let piorDia = fat[0];
 let diasMedia = 0;
 
@@ -152,6 +154,7 @@ for (const i of fat) {
   }
 }
 
+//Imprime os valores solicitados
 console.log(
   `O pior valor de faturamento ${piorDia.valor} no dia ${piorDia.dia}`
 );

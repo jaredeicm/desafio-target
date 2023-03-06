@@ -1,8 +1,10 @@
 let result = document.getElementById('result');
 const object = document.getElementById('number');
 
+//Executa a verificação do número conforme o usuário digite
 object.addEventListener('keyup', verifyNumber);
 
+//Solicita que o número seja maior que 1
 function verifyNumber() {
   if (object.value > 1) {
     geraSequencia();

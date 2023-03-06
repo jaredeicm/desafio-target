@@ -5,12 +5,14 @@ const faturamento = [
   { sigla: 'ES', valor: 27165.48 },
   { sigla: 'Outros', valor: 19849.53 },
 ];
-
+// Chama a função de soma para cada valor dentro do array
 totalFat = faturamento.reduce(somarTotal, 0);
 
+//Soma todos os valores do array
 function somarTotal(soma, item) {
   return soma + item.valor;
 }
+// faz o cálculo de porcentagem e informa na tela para cada registro
 let porcentagem;
 faturamento.forEach(e => {
   porcentagem = (e.valor / totalFat) * 100;
