@@ -134,9 +134,7 @@ fat.forEach(e => {
 
 let media = soma / qtdDias;
 let melhorDia = { dia: 0, valor: 0 };
-
-// Aqui foi utilizado o primeiro valor do array
-let piorDia = fat[0];
+let piorDia = { dia: 0, valor: soma };
 let diasMedia = 0;
 
 //Percorre o json e verifica o melhor dia, pior dia e se é superior a media
